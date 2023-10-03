@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Priyanshu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a6d441e422.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
